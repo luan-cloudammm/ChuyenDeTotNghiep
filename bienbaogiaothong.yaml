@@ -1,0 +1,77 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# COCO8 dataset (first 8 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco8/
+# Example usage: yolo train data=coco8.yaml
+
+# Dataset root directory
+path: C:/Users/Admin/Downloads/archive/archive2 
+
+# Train/val/test sets
+train: train/images
+val: val/images
+test: test/images
+
+# Loss function settings
+loss:
+  cls: focal  # giảm trọng số của các các class phổ biến, và tăng trọng số của class ít xuất hiện
+  gamma: 2.0  # hệ số điều chỉnh độ nhấn mạnh lên class hiếm
+# Classes
+names:
+  0: "Đường người đi bộ cắt ngang"
+  1: "Đường giao nhau cùng cấp"
+  2: "Cấm đi ngược chiều"
+  3: "Các xe chỉ được rẽ phải"
+  4: "Giao nhau với đường đồng cấp"
+  5: "Giao nhau với đường không ưu tiên"
+  6: "Chỗ ngoặc nguy hiểm"
+  7: "Cấm rẽ trái"
+  8: "Bến xe buýt"
+  9: "Nơi giao nhau chạy theo vòng xuyến"
+  10: "Cấm dừng và đỗ xe"
+  11: "Được phép quay đầu"
+  12: "Biển phân làn"
+  13: "Cấm xe máy rẽ trái"
+  14: "Giảm tốc độ"
+  15: "Cấm xe tải"
+  16: "Đường bị hẹp bên phải"
+  17: "Giới hạn chiều cao"
+  18: "Cấm quay đầu"
+  19: "Giới hạn chiều cao"
+  20: "Cấm rẽ phải và quay đầu"
+  21: "Cấm ô tô"
+  22: "Đường bị hẹp bên trái"
+  23: "Gồ giảm tốc phía trước"
+  24: "Cấm xe hai và ba bánh"
+  25: "Kiểm tra"
+  26: "Chỉ dành cho xe máy"
+  27: "Chướng ngoại vật phía trước"
+  28: "Đoạn đường có trẻ em"
+  29: "Xe tải và xe công"
+  30: "Cấm mô tô hoặc xe máy"
+  31: "Chỉ dành cho xe tải"
+  32: "Đường có camera giám sát"
+  33: "Cấm rẽ phải"
+  34: "Nhiều chỗ ngoặc liên tiếp"
+  35: "Cấm xe công"
+  36: "Cấm rẽ trái và phải"
+  37: "Cấm đi thẳng và rẽ phải"
+  38: "Đường ngã ba"
+  39: "Giới hạn tốc độ (50km/h)"
+  40: "Giới hạn tốc độ (60km/h)"
+  41: "Giới hạn tốc độ (80km/h)"
+  42: "Giới hạn tốc độ (40km/h)"
+  43: "Rẽ trái"
+  44: "Hạn chế chiều cao"
+  45: "Nguy hiểm khác"
+  46: "Đi thẳng"
+  47: "Cấm đỗ xe"
+  48: "Chỉ xe công"
+  49: "Cấm ô tô quay đầu"
+  50: "Giao nhau với đường sắt có rào chắn"
+  51: "Cấm rẽ trái và quay đầu"
+  52: "Đi lối bên phải"
+  53: "Biển báo gờ giảm tốc độ"
+
+# Download script/URL (optional)
+# download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip
